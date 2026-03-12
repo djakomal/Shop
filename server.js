@@ -16,7 +16,7 @@ const app = express();
 
 // ─── Middlewares ───────────────────────────────────────────────────────────────
 app.use(cors({
-  origin:process.env.FRONTEND_URL,
+  origin:process.env.FRONTEND_URL||'https://shopelven.netlify.app',
   credentials: true,
 }));
 app.use(express.json());
